@@ -1,0 +1,21 @@
+{
+  "name": "talking-clock",
+  "version": "1.0.0",
+  "description": "Talking clock project",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "mockdate": "^3.0.5"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "winston": "^3.7.2"
+  }
+}
