@@ -1,4 +1,4 @@
-About the project<br>
+About the project:<br>
 This is a talking clock service that converts numerical time to human friendly text. e.g. `16:00` to `Four o'clock`, `3:43` to `Seventeen to four`<br><br>
 It is build in nodejs and using npm as the package manager<br>
 Packages used are:<br>
@@ -23,11 +23,11 @@ Nodemon is a library that will check for changes while developing or testing and
 To get the current time from server through locahost use http://localhost:8082/. Replace port number with custom port number if changed.<br>
 To get a custom time from server though localhost use http://localhost:8082/time where time is your custom time. e.g. http://localhost:8082/17:25<br>
 
-Testing<br>
+Testing:<br>
 The testing library used is jest.<br>
 The tests are located in `service\__test__\TalkingClockService.test.js`<br>
 To run tests use `npm test`
 
-Error Log <br>
+Error Log: <br>
 The error log is located at `logs\error.log`. The first line in error.log is just an example.<br>
 The purpose of this log is to catch unhandled errors and be a reference for debugging/continuous improvement.<br>
