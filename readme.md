@@ -20,6 +20,8 @@ Default port to listen to is 8082. To set the port to listen to please change `P
 To run the web server in production use `node server.js`.<br>
 To run the web server for development/testing use `nodemon server.js`<br>
 Nodemon is a library that will check for changes while developing or testing and restart the server automatically.<br><br>
+To get the current time from server through locahost use http://localhost:8082/. Replace port number with custom port number if changed.<br>
+To get a custom time from server though localhost use http://localhost:8082/time where time is your custom time. e.g. http://localhost:8082/17:25<br>
 
 Testing<br>
 The testing library used is jest.<br>
