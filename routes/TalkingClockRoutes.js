@@ -16,10 +16,12 @@ router.get("/:timeVar", (req, res, next) => {
 
   //check response for error
   if (response.startsWith("Sorry")) {
-    //create new error object and move to next
-    const error = new Error(response);
-    error.status = 400;
-    next(error);
+    //return error status and message to user
+    res.status(400).json({
+      error: {
+        message: response,
+      },
+    });
   } else {
     //return response as JSON object
     res.status(200).json({ response: { time: response } });
