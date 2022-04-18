@@ -68,11 +68,11 @@ const hourArray = [
 // Exceptions handled by caller
 const getCurrentTime = () => {
   //get current datetime
-  today = new Date();
+  const today = new Date();
   //get hour from datetime
-  hour = today.getHours();
+  const hour = today.getHours();
   //get minute from datetime
-  minute = today.getMinutes();
+  let minute = today.getMinutes();
   //ensure minute is 2 digits e.g 03,07,08
   if (minute < 10) {
     minute = String(minute).padStart(2, "0");
@@ -92,14 +92,15 @@ const parseTime = (timeVar) => {
       timeVar = getCurrentTime();
     }
     //check if timeVar is correct format
-    let isCorrectFormat = /^(2[0-3]|[01]?[0-9]):([0-5][0-9])/.test(timeVar);
+    const isCorrectFormat = /^(2[0-3]|[01]?[0-9]):([0-5][0-9])/.test(timeVar);
+    let response;
 
     //if format is correct continue other return error
     if (isCorrectFormat) {
       //seperate hour and minute
-      timeArray = timeVar.split(":");
-      hour = parseInt(timeArray[0]);
-      minute = parseInt(timeArray[1]);
+      const timeArray = timeVar.split(":");
+      const hour = parseInt(timeArray[0]);
+      const minute = parseInt(timeArray[1]);
 
       //check if time is valid
       //convert time to english
