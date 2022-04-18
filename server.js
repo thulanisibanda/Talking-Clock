@@ -1,4 +1,7 @@
+//imports
 const express = require("express");
+
+//initialising express
 const app = express();
 
 // port number to listen to

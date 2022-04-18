@@ -1,6 +1,6 @@
 const logger = require("../logs/logger");
 
-//array to hold all minute strings
+//array to hold minute strings
 const minuteArray = [
   "zero",
   "one",
@@ -35,7 +35,7 @@ const minuteArray = [
   "thirty",
 ];
 
-//array for all hour strings
+//array for hour strings
 const hourArray = [
   "twelve",
   "one",
@@ -80,7 +80,7 @@ const getCurrentTime = () => {
   return `${hour}:${minute}`;
 };
 
-//main function to parse time from hh:mm to english with error handling
+//main function to parse time from hh:mm to english and error handling
 const parseTime = (timeVar) => {
   const formatError =
     "Sorry I didnt understand that. Please use the time format hh:mm";
@@ -107,7 +107,7 @@ const parseTime = (timeVar) => {
       //if time is not valid set error message
       response = formatError;
     }
-    //check to make sure no undefined vars
+    //check to make sure no undefined variables
     if (response.includes("undefined")) {
       throw new Error(`contains undefined`);
     }
