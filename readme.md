@@ -28,4 +28,4 @@ To run tests use `npm test`
 
 Error Log <br>
 The error log is located at `logs\error.log`. The first line in error.log is just an example.<br>
-The purpose of this log is to catch unhandled errors and be a reference for continuous improvement.<br>
+The purpose of this log is to catch unhandled errors and be a reference for debugging/continuous improvement.<br>
