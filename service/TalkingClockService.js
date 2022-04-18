@@ -64,7 +64,8 @@ const hourArray = [
   "twelve",
 ];
 
-// get current time in hh:mm format
+// Get current time in hh:mm format
+// Exceptions handled by caller
 const getCurrentTime = () => {
   //get current datetime
   today = new Date();
@@ -122,7 +123,8 @@ const parseTime = (timeVar) => {
   }
 };
 
-// change time hh:mm format to english
+// Change time hh:mm format to english
+// Exceptions handled by caller
 const timeToText = ({ hour, minute }) => {
   //set response variable
   let response;
